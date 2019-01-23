@@ -1,0 +1,144 @@
+.product-description {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+.product-description > .title {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.product-description > .item {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.product-description > .item.-heart {
+    position: absolute;
+    transform: translateX(-100%);
+    top: 5px;
+    left: -47px;
+    cursor: pointer;
+    width: 33px;
+    height: 29px;
+}
+
+/* .product-description > .item.-heart:hover {
+    transform: scale(1.5) translateX(-70%);
+} */
+
+.product-description > .item.-star {
+    margin-bottom: 10px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.product-description .icon {
+    transition: transform 50ms linear;
+}
+
+.product-description .icon:hover {
+    transform: scale(1.1);
+}
+
+.product-description .icon.-active {
+    display: none;
+}
+
+.product-description > .item.-active .icon {
+    display: none;
+}
+
+.product-description > .item.-active .icon.-active {
+    display: block;
+}
+
+.product-description .star {
+    display: inline-block;
+}
+
+.product-description .star.-active > .icon {
+    display: none;
+}
+
+.product-description .star.-active > .-active {
+    display: block;
+}
+
+.product-description > .item + .item {
+    margin-left: 8px;
+}
+
+.star img {
+    width: 25px;
+    height: 24px;
+}
+
+.product-description > .item.-info {
+    width: 200px;
+    text-align: right;
+}
+
+.product-description > .item.-last {
+    margin-bottom: 72px;
+}
+
+.product-description .contrast {
+    text-transform: uppercase;
+    float: left;
+}
+
+.product-description > .text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.product-description > .text.-more {
+    margin-bottom: 0;
+}
+
+.product-description .action {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 1255px) {
+    .product-description {
+        width: 50%;
+        min-width: 655px;
+        margin: 0 auto 40px;
+    }
+
+    .product-description > .title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .product-description > .item.-star {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .product-description > .item.-number {
+        padding-top: 4px;
+    }
+
+    .product-description > .item.-heart {
+        left: auto;
+        transform: translateX(4px);
+    }
+}
+
+@media (max-width: 720px) {
+    .product-description {
+        width: 90%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 445px) {
+    .product-description > .item.-heart {
+        position: static;
+    }
+}
